@@ -1,0 +1,27 @@
+{
+    "mainPage": {
+        "contactSection": {
+            "tiltleSection": "Sign up",
+            "tiltle": "Connect with us",
+            "subTitile": "Sign up for our marketing newsletter for new products and feature updates, tutorials, and events.",
+            "description": "You can unsubscribe at any time. Read our privacy policy and terms and conditions."
+        }
+    },
+    "emails": {
+        "validEmail": "test@gmail.com",
+        "invalidEmail": "testgmail.com"
+    },
+
+    "shopPage": {
+        "shoppingCart": {
+            "emptyText": "Your cart is empty"
+        }
+    },
+
+    "styleFiels": {
+        "redBorder": "1px solid rgb(235, 0, 0)",
+        "greenBorder": "1px solid rgb(0, 163, 122)",
+        "borderColor": "rgb(235, 0, 0)",
+        "error": "This field is required."
+    }
+}

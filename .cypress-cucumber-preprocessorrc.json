@@ -1,0 +1,13 @@
+{
+  "messages": {
+    "enabled": true
+  },
+  "html": {
+    "enabled": true
+  },
+  "stepDefinitions": [
+    "cypress/e2e/[filepath]/**/*.{js,ts}",
+    "cypress/e2e/[filepath].{js,ts}",
+    "cypress/support/step_definitions/**/*.{js,ts}"
+  ]
+}

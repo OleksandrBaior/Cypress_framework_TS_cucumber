@@ -1,0 +1,35 @@
+{
+    "name": "cypress_framework_ts",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "open:cypress": "npx cypress open",
+        "e2e:chrome:Macbook16": "npx cypress run --record --key 377f94db-bf94-4417-b9b9-6ca2af55be11  --browser chrome",
+        "e2e:edge:Macbook16": "npx cypress run --record --key 377f94db-bf94-4417-b9b9-6ca2af55be11> --browser edge",
+        "e2e:electron:Macbook16": "npx cypress run --record --key 377f94db-bf94-4417-b9b9-6ca2af55be11 --browser electron",
+        "e2e:chrome:Macbook15": "npx cypress run --record --key 377f94db-bf94-4417-b9b9-6ca2af55be11 --config-file configs/cypress.mackbook15.config.ts --browser chrome",
+        "e2e:edge:Macbook15": "npx cypress run --record --key 377f94db-bf94-4417-b9b9-6ca2af55be11 --config-file config/cypress.mackbook15.config.ts --browser edge",
+        "e2e:electron:Macbook15": "npx cypress run --record --key 377f94db-bf94-4417-b9b9-6ca2af55be11 --config-file config/cypress.mackbook15.config.ts --browser electron",
+        "e2e:chrome:lenovo": "npx cypress run --record --key 377f94db-bf94-4417-b9b9-6ca2af55be11 --config-file configs/cypress.lenovo.config.ts --browser chrome",
+        "e2e:edge:lenovo": "npx cypress run --record --key 377f94db-bf94-4417-b9b9-6ca2af55be11 --config-file configs/cypress.lenovo.config.ts --browser edge",
+        "e2e:electron:lenovo": "npx cypress run --record --key 377f94db-bf94-4417-b9b9-6ca2af55be11 --config-file configs/cypress.lenovo.config.ts --browser electron",
+        "format:allFilesPrettier": "npx prettier . --write"
+    },
+    "author": "Olexandr Baior",
+    "license": "ISC",
+    "dependencies": {
+        "@badeball/cypress-cucumber-preprocessor": "^20.0.5",
+        "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+        "@faker-js/faker": "^8.4.1",
+        "cypress": "^13.8.0",
+        "eslint-plugin-cypress": "^3.0.3",
+        "husky": "^9.0.11",
+        "lint-staged": "^15.2.2",
+        "prettier": "3.2.5",
+        "typescript": "^5.4.5"
+    },
+    "lint-staged": {
+        "**/*": "prettier --write --ignore-unknown"
+    }
+}
