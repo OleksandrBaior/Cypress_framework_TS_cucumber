@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
-import contactUs from '../../../pages/contactUs.page';
-import constants from '../../../../resourcers/constants.json';
+import contactUs from '../../../../pages/contactUs.page';
+import constants from '../../../../../resourcers/constants.json';
 
 it('TC_09_Verify the contact us form with empty field', () => {
     contactUs.visit();

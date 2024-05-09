@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
-import mainPage from '../../../pages/main.page';
-import endpoints from '../../../../resourcers/endpoints.json';
+import mainPage from '../../../../pages/main.page';
+import endpoints from '../../../../../resourcers/endpoints.json';
 
 it('TC_10_Verify social media icon', () => {
     mainPage.visit();

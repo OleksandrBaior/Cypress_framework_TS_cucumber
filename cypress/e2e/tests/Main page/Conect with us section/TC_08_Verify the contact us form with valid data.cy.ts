@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
-import contactUs from '../../../pages/contactUs.page';
-import randomUtils from '../../../../utils/random.utils';
+import contactUs from '../../../../pages/contactUs.page';
+import randomUtils from '../../../../../utils/random.utils';
 
 it('TC_08_Verify the contact us form with valid data', () => {
     contactUs.visit();

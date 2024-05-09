@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
-import mainPage from '../../../pages/main.page';
-import constants from '../../../../resourcers/constants.json';
-import endpoints from '../../../../resourcers/endpoints.json';
+import mainPage from '../../../../pages/main.page';
+import constants from '../../../../../resourcers/constants.json';
+import endpoints from '../../../../../resourcers/endpoints.json';
 
 it('TC_04_Verify connect with us section with valid and invalid email', () => {
     mainPage.visit();

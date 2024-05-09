@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-import mainPage from '../../pages/main.page';
+import mainPage from '../../../pages/main.page';
 
 it('TC_02_Verify cookie pop-up in case allowing every option separately', () => {
     mainPage.visit();

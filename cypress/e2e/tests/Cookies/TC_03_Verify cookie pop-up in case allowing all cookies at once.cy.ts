@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-import mainPage from '../../pages/main.page';
+import mainPage from '../../../pages/main.page';
 
 it('TC_03_Verify cookie pop-up in case allowing all cookies at once', () => {
     cy.getCookies().should('be.empty');
