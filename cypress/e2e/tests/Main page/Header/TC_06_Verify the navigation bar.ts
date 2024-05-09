@@ -1,9 +1,11 @@
 /// <reference types="cypress" />
+import { Given, Then } from '@badeball/cypress-cucumber-preprocessor';
 import mainPage from '../../../../pages/main.page';
 
-it('TC_06_Verify the navigation bar', () => {
+Given('I visit shop page', () => {
     mainPage.visit();
-
+});
+Then('All elements of navbar are present', () => {
     for (const buttonName in mainPage.navigationBar) {
         mainPage.navigationBar[buttonName]().should('be.visible');
     }

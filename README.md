@@ -1,6 +1,9 @@
 <div align="center"> 
 <img <img src="https://static-00.iconduck.com/assets.00/cypress-icon-2048x2045-rgul477b.png" width="80"/>
- <h1>Cypress-framework</h1>
+➕
+<img <img src="https://brandslogos.com/wp-content/uploads/images/cucumber-logo.png" width="70"/>
+
+ <h1>Cypress-framework+Cucumber</h1>
 </div>
 
 ## ⚡️ Object for testing
@@ -42,15 +45,15 @@ npm run e2e:electron:Macbook16
 To run the specific spec:
 
 ```
-e2e:chrome:Macbook16 -- --spec "cypress/e2e/my-spec.cy.ts"
+e2e:chrome:Macbook16 -- --spec "cypress/e2e/my-spec.cy.ts"?????????
 ```
 
 ## 📝 Cloud cypress report
 
 Learn more about Cypress Cloud at - [Documentation](https://docs.cypress.io/guides/overview/why-cypress)
 
-To open cloud cypress report - [Cloud reports](https://cloud.cypress.io/projects/7wmxm7/runs?branches=%5B%5D&committers=%5B%5D&flaky=%5B%5D&page=1&status=%5B%5D&tags=%5B%5D&tagsMatch=ANY&timeRange=%7B%22startDate%22%3A%222023-05-03%22%2C%22endDate%22%3A%222024-05-02%22%7D)
+To open cloud cypress report - [Cloud reports](https://cloud.cypress.io/projects/7wmxm7/runs?branches=%5B%5D&committers=%5B%5D&flaky=%5B%5D&page=1&status=%5B%5D&tags=%5B%5D&tagsMatch=ANY&timeRange=%7B%22startDate%22%3A%222023-05-03%22%2C%22endDate%22%3A%222024-05-02%22%7D)??????????
 
 ## 🔑 License
 
-[MIT](https://github.com/OleksandrBaior/Cypress_framework_TS?tab=MIT-1-ov-file#)
+[MIT](https://github.com/OleksandrBaior/Cypress_TS_cucumber?tab=MIT-1-ov-file)

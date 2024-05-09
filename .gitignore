@@ -3,5 +3,6 @@ videos
 screenshots
 reportAllure
 --browser
-cucumber-report.html
 cucumber-messages.ndjson
+cypress\downloads
+cucumber-report.html

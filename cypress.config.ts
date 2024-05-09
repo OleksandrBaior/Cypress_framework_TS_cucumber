@@ -2,7 +2,7 @@ import { defineConfig } from 'cypress';
 import endpoints from './resourcers/endpoints.json';
 import fs from 'fs';
 import createBundler from '@bahmutov/cypress-esbuild-preprocessor';
-import { addCucumberPreprocessorPlugin } from '@badeball/cypress-cucumber-preprocessor';
+import { addCucumberPreprocessorPlugin, beforeSpecHandler } from '@badeball/cypress-cucumber-preprocessor';
 import { createEsbuildPlugin } from '@badeball/cypress-cucumber-preprocessor/esbuild';
 
 export default defineConfig({
@@ -27,13 +27,15 @@ export default defineConfig({
                 })
             );
             on('after:spec', (spec: Cypress.Spec, results: CypressCommandLine.RunResult) => {
-                if (results && results.video) {
-                    const failures = results.tests.some((test) => test.attempts.some((attempt) => attempt.state === 'failed'));
-                    if (!failures) {
-                        fs.unlinkSync(results.video);
-                    }
-                }
+                // if (results && results.video) {
+                //     const failures = results.tests.some((test) => test.attempts.some((attempt) => attempt.state === 'failed'));
+                //     if (!failures) {
+                //         fs.unlinkSync(results.video);
+                //     }
+                // }
             });
+            
+       
             return config;
         },
         baseUrl: endpoints.baseUrl,
