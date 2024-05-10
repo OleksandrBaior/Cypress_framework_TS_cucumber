@@ -58,7 +58,7 @@ jobs:
               if: ${{ !cancelled() }}
               with:
                 name: cucumber-report.html
-                path: ./
+                path: ./cucumber-report.html
                 retention-days: 30 
 
             - name: Deploy report to Github Pages
