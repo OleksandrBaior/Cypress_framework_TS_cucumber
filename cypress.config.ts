@@ -26,15 +26,15 @@ export default defineConfig({
                     plugins: [createEsbuildPlugin(config)],
                 })
             );
-            on("after:spec", async (spec: Cypress.Spec, results: CypressCommandLine.RunResult) => {
+            on('after:spec', async (spec: Cypress.Spec, results: CypressCommandLine.RunResult) => {
                 await afterSpecHandler(config, spec, results);
-                 if (results && results.video) {
+                if (results && results.video) {
                     const failures = results.tests.some((test) => test.attempts.some((attempt) => attempt.state === 'failed'));
-                if (!failures) {
+                    if (!failures) {
                         fs.unlinkSync(results.video);
                     }
                 }
-              });
+            });
             return config;
         },
         baseUrl: endpoints.baseUrl,

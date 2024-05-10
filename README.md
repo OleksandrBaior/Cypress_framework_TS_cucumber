@@ -48,6 +48,8 @@ To run the specific spec:
 e2e:chrome:Macbook16 -- --spec "cypress/e2e/my-spec.cy.ts"?????????
 ```
 
+npx cypress run --env tags="@Smoke" --browser chrome
+
 ## 📝 Cloud cypress report
 
 Learn more about Cypress Cloud at - [Documentation](https://docs.cypress.io/guides/overview/why-cypress)

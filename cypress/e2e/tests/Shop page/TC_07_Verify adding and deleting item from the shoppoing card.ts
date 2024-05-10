@@ -30,5 +30,3 @@ When('I click countiue button', () => {
 Then('Shopping cart is close', () => {
     shopPage.yourCart.shoppingCart().should('not.be.visible');
 });
-
-
