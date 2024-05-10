@@ -57,4 +57,5 @@ jobs:
               env:
                 PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                 PUBLISH_BRANCH: gh-pages
-                PUBLISH_DIR: ./cucumber-report.html
+                PUBLISH_DIR: ./
+                PUBLISH_FILE: cucumber-report.html
