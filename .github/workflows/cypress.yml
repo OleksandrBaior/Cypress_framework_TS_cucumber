@@ -18,7 +18,7 @@ jobs:
         strategy:
             fail-fast: false
             matrix:
-                containers: [1, 2, 3, 4, 5]
+                containers: [1]
 
         steps:
             - name: Checkout
@@ -52,7 +52,8 @@ jobs:
                   if-no-files-found: ignore
 
 
-            - name: Create playwright-report
+                  
+            - name: Create cucumber-report
               uses: actions/upload-artifact@v4
               if: ${{ !cancelled() }}
               with:
