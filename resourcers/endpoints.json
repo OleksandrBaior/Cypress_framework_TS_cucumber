@@ -1,6 +1,6 @@
 {
     "baseUrl": "https://telnyx.com",
-    "createAccount": "https://telnyx.com/sign-up?email=testgmail.comtestgmail.comtest%40gmail.com",
+    "createAccount": "https://telnyx.com/sign-up?email=testgmail.comtest%40gmail.com",
     "privacyPolicy": "https://telnyx.com/privacy-policy",
     "termsAndConditions": "https://telnyx.com/terms-and-conditions",
     "solution": "https://telnyx.com/solutions",
