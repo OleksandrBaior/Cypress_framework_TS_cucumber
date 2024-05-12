@@ -15,6 +15,11 @@ jobs:
         runs-on: ubuntu-latest
         name: E2E on Chrome
 
+        strategy:
+            fail-fast: false
+            matrix:
+                containers: [1, 2, 3, 4, 5]
+
         steps:
             - name: Checkout
               uses: actions/checkout@v4
@@ -45,14 +50,6 @@ jobs:
                   name: cypress-videos
                   path: cypress/videos
                   if-no-files-found: ignore
-
-            - name: Create cucumber-report
-              uses: actions/upload-artifact@v4
-              if: ${{ !cancelled() }}
-              with:
-                  name: cucumber-report
-                  path: ./
-                  retention-days: 15
     # deploy:
     #     needs: test
     #     runs-on: ubuntu-latest

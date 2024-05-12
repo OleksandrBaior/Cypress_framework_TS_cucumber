@@ -1,7 +1,6 @@
 node_modules/
 videos
 screenshots
-reportAllure
 --browser
 cucumber-messages.ndjson
 cypress\downloads
