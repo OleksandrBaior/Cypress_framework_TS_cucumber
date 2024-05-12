@@ -55,24 +55,20 @@ jobs:
                   retention-days: 15
 
             - uses: actions/checkout@v3
-            
+
             - name: Download cucumber report artifact
+              if: always()
               uses: actions/download-artifact@v3
               with:
-                name: cucumber-report
-                
+                  name: cucumber-report
+
             - name: Display structure of downloaded files
               run: ls -R
-            
-           
-                  
+
             - name: Deploy report to Github Pages
               if: always()
               uses: peaceiris/actions-gh-pages@v2
               env:
-                PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                PUBLISH_BRANCH: gh-pages
-                PUBLISH_DIR: ./
-
-
-                    
+                  PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  PUBLISH_BRANCH: gh-pages
+                  PUBLISH_DIR: ./
