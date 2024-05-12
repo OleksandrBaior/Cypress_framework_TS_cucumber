@@ -53,21 +53,21 @@ jobs:
                   name: cucumber-report
                   path: ./
                   retention-days: 15
-    deploy:
-        needs: test
-        runs-on: ubuntu-latest
-        steps:
-            - name: Get report
-              uses: actions/checkout@v3
-            - name: Download report artifact
-              uses: actions/download-artifact@v3
-              with:
-                  name: cucumber-report
+    # deploy:
+    #     needs: test
+    #     runs-on: ubuntu-latest
+    #     steps:
+    #         - name: Get report
+    #           uses: actions/checkout@v3
+    #         - name: Download report artifact
+    #           uses: actions/download-artifact@v3
+    #           with:
+    #               name: cucumber-report
 
-            - name: Deploy report to Github Pages
-              if: always()
-              uses: peaceiris/actions-gh-pages@v2
-              env:
-                  PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                  PUBLISH_BRANCH: gh-pages
-                  PUBLISH_DIR: ./
+    #         - name: Deploy report to Github Pages
+    #           if: always()
+    #           uses: peaceiris/actions-gh-pages@v2
+    #           env:
+    #               PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #               PUBLISH_BRANCH: gh-pages
+    #               PUBLISH_DIR: ./

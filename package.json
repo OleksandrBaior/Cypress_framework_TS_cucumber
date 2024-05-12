@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "open:cypress": "npx cypress open",
-        "e2e:chrome:Macbook16": "npx cypress run --record --key ba18b2c9-f759-4649-8c59-020798119698  --browser chrome --parallel --ci-build-id paqboc",
+        "e2e:chrome:Macbook16": "npx cypress run --record --key ba18b2c9-f759-4649-8c59-020798119698  --browser chrome",
         "e2e:edge:Macbook16": "npx cypress run --record --key ba18b2c9-f759-4649-8c59-020798119698 --browser edge --ci-build-id paqboc",
         "e2e:electron:Macbook16": "npx cypress run --record --key ba18b2c9-f759-4649-8c59-020798119698 --browser electron --ci-build-id paqboc",
         "e2e:chrome:Macbook15": "npx cypress run --record --key ba18b2c9-f759-4649-8c59-020798119698 --config-file configs/cypress.mackbook15.config.ts --browser chrome --ci-build-id paqboc",
