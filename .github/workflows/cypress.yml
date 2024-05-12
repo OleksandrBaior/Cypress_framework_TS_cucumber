@@ -59,10 +59,17 @@ jobs:
         if: always()
         runs-on: ubuntu-latest
         steps:
+            - uses: actions/checkout@v3
+            
             - name: Download cucumber report artifact
               uses: actions/download-artifact@v3
               with:
-                  name: cucumber-report
+                name: cucumber-report
+                
+            - name: Display structure of downloaded files
+              run: ls -R
+            
+           
                   
             - name: Deploy report to Github Pages
               if: always()
