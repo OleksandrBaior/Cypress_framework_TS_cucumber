@@ -33,6 +33,7 @@ jobs:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
             - name: Screenshots report
+              if: always()
               uses: actions/upload-artifact@v4
               with:
                   name: cypress-screenshots
@@ -40,6 +41,7 @@ jobs:
                   if-no-files-found: ignore
 
             - name: Video report
+              if: always()
               uses: actions/upload-artifact@v4
               with:
                   name: cypress-videos
@@ -56,13 +58,12 @@ jobs:
 
     deploy:
         needs: test
+        if: always()
         runs-on: ubuntu-latest
         steps:
             - name: Download cucumber report artifact
               if: always()
               uses: actions/download-artifact@v4
-              with:
-                  name: cucumber-report
 
             - name: Display structure of downloaded files
               run: ls -R
