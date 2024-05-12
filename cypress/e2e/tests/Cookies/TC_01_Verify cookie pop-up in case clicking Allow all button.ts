@@ -12,7 +12,7 @@ When('I click on read more link', () => {
     mainPage.cookiesElements.readMoreLink().click({ force: true });
 });
 Then('Title is visible', () => {
-    mainPage.cookiesElements.titleReadMorePage().should('have.text', 'Telnyx Cookie Policy');
+    mainPage.cookiesElements.titleReadMorePage().should('have.text', 'Telnyx Cookie Policy00000000');
 });
 
 When('I come back to main page', () => {
