@@ -56,9 +56,11 @@ jobs:
 
     deploy:
         needs: test
+        if: always()
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
+              if: always()
             - name: Download cucumber report artifact
               uses: actions/download-artifact@v3
               with:
