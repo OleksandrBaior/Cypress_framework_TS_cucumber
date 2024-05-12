@@ -1,0 +1,12 @@
+{
+    "baseUrl": "https://telnyx.com",
+    "createAccount": "https://telnyx.com/sign-up?email=testgmail.comtest%40gmail.com",
+    "privacyPolicy": "https://telnyx.com/privacy-policy",
+    "termsAndConditions": "https://telnyx.com/terms-and-conditions",
+    "solution": "https://telnyx.com/solutions",
+    "shop": "https://shop.telnyx.com/",
+    "contactUs": "/contact-us",
+    "linkedin": "https://www.linkedin.com/company/telnyx/",
+    "twitter": "https://twitter.com/i/flow/login?redirect_after_login=%2Ftelnyx",
+    "facebook": "https://www.facebook.com/"
+}

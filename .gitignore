@@ -1,0 +1,7 @@
+node_modules/
+videos
+screenshots
+--browser
+cucumber-messages.ndjson
+cypress\downloads
+cucumber-report.html
