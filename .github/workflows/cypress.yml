@@ -37,14 +37,14 @@ jobs:
               with:
                   name: cypress-screenshots
                   path: cypress/screenshots
-                  if-no-files-found: ignore
+                  # if-no-files-found: ignore
 
             - name: Video report
               uses: actions/upload-artifact@v4
               with:
                   name: cypress-videos
                   path: cypress/videos
-                  if-no-files-found: ignore
+                  # if-no-files-found: ignore
 
             - name: Create cucumber-report
               uses: actions/upload-artifact@v4
@@ -61,3 +61,4 @@ jobs:
                   PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                   PUBLISH_BRANCH: gh-pages
                   PUBLISH_DIR: ./
+                  PUBLISH_FOLDER: cucumber-report.html
