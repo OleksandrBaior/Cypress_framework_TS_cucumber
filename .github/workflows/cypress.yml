@@ -54,15 +54,19 @@ jobs:
                   path: ./
                   retention-days: 15
 
-            - uses: actions/checkout@v3
-
+    deploy:
+        needs: test
+        if: always()
+        runs-on: ubuntu-latest
+        steps:
             - name: Download cucumber report artifact
-              if: always()
               uses: actions/download-artifact@v3
+              if: always()
               with:
                   name: cucumber-report
 
             - name: Display structure of downloaded files
+              if: always()
               run: ls -R
 
             - name: Deploy report to Github Pages
