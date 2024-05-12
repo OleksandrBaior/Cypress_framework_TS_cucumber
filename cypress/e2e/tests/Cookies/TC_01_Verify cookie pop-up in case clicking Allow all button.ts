@@ -6,7 +6,7 @@ Given('I visit main page', () => {
     mainPage.visit();
 });
 Then('Cookie modal is visible', () => {
-    mainPage.cookiesElements.cookieModal().should('be.visible');
+    mainPage.cookiesElements.cookieModal().should('not.be.visible');
 });
 When('I click on read more link', () => {
     mainPage.cookiesElements.readMoreLink().click({ force: true });

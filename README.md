@@ -1,6 +1,5 @@
 <div align="center"> 
 <img <img src="https://static-00.iconduck.com/assets.00/cypress-icon-2048x2045-rgul477b.png" width="80"/>
-➕
 <img <img src="https://brandslogos.com/wp-content/uploads/images/cucumber-logo.png" width="70"/>
 
  <h1>Cypress-framework+Cucumber</h1>
