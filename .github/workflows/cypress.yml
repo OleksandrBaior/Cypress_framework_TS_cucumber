@@ -48,7 +48,6 @@ jobs:
 
             - name: Create cucumber-report
               uses: actions/upload-artifact@v4
-              if: ${{ !cancelled() }}
               with:
                   name: cucumber-report
                   path: ./
@@ -56,21 +55,17 @@ jobs:
 
     deploy:
         needs: test
-        if: always()
         runs-on: ubuntu-latest
         steps:
             - name: Download cucumber report artifact
               uses: actions/download-artifact@v3
-              if: always()
               with:
                   name: cucumber-report
 
             - name: Display structure of downloaded files
-              if: always()
               run: ls -R
 
             - name: Deploy report to Github Pages
-              if: always()
               uses: peaceiris/actions-gh-pages@v2
               env:
                   PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
