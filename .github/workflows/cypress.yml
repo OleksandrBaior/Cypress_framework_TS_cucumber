@@ -15,10 +15,10 @@ jobs:
         runs-on: ubuntu-latest
         name: E2E on Chrome
 
-        strategy:
-            fail-fast: false
-            matrix:
-                containers: [1]
+        # strategy:
+        #     fail-fast: false
+            # matrix:
+            #     containers: [1]
 
         steps:
             - name: Checkout
@@ -53,19 +53,19 @@ jobs:
 
 
                   
-            - name: Create cucumber-report
-              uses: actions/upload-artifact@v4
-              if: ${{ !cancelled() }}
-              with:
-                name: cucumber-report.html
-                path: ./cucumber-report.html
-                retention-days: 30 
+            # - name: Create cucumber-report
+            #   uses: actions/upload-artifact@v4
+            #   if: ${{ !cancelled() }}
+            #   with:
+            #     name: cucumber-report.html
+            #     path: ./cucumber-report.html
+            #     retention-days: 30 
 
-            - name: Deploy report to Github Pages
-              if: always()
-              uses: peaceiris/actions-gh-pages@v2
-              env:
-                PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                PUBLISH_BRANCH: gh-pages
-                PUBLISH_DIR: ./
+            # - name: Deploy report to Github Pages
+            #   if: always()
+            #   uses: peaceiris/actions-gh-pages@v2
+            #   env:
+            #     PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            #     PUBLISH_BRANCH: gh-pages
+            #     PUBLISH_DIR: ./
                 
