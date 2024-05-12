@@ -58,17 +58,19 @@ jobs:
 
     deploy:
         needs: test
-        if: always()
         runs-on: ubuntu-latest
+        if: always()
         steps:
             - name: Download cucumber report artifact
               if: always()
               uses: actions/download-artifact@v4
 
             - name: Display structure of downloaded files
+              if: always()
               run: ls -R
 
             - name: Deploy report to Github Pages
+              if: always()
               uses: peaceiris/actions-gh-pages@v2
               env:
                   PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
