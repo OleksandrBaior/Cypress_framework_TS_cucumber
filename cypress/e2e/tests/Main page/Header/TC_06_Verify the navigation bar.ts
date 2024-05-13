@@ -2,7 +2,7 @@
 import { Given, Then } from '@badeball/cypress-cucumber-preprocessor';
 import mainPage from '../../../../pages/main.page';
 
-Given('I visit shop page', () => {
+Given('I visit main page', () => {
     mainPage.visit();
 });
 Then('All elements of navbar are present', () => {

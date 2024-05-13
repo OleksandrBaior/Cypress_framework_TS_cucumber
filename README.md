@@ -44,7 +44,7 @@ npm run e2e:electron:Macbook16
 To run the specific spec:
 
 ```
-npm run e2e:chrome:Macbook16 -- --spec "cypress/e2e/my-spec.feature
+npm run e2e:chrome:Macbook16 -- --spec "cypress/e2e/my-spec.feature"
 ```
 
 To run the specific spec marked by tag:

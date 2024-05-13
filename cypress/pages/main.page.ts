@@ -1,6 +1,9 @@
 import BasePage from './base.page';
 
 class MainPage extends BasePage {
+    header = {
+        signUpBtn: () => cy.get('#header-sign-up'),
+    };
     navigationBar = {
         productsBtn: () => cy.get('[id*="radix-:Rkljm:"]'),
         solutionBtn: () => cy.get('nav > a[href="/solutions"').first(),
