@@ -1,9 +1,8 @@
 {
-    "messages": {
-        "enabled": true
-    },
     "html": {
-        "enabled": true
+        "enabled": true,
+        "output": "./cucmber-report/cucmber.html"
+       
     },
     "stepDefinitions": ["cypress/e2e/tests/**/[filepath].{js,ts}", "cypress/e2e/[filepath]/**/*.{js,ts}", "cypress/e2e/[filepath].{js,ts}", "cypress/support/step_definitions/**/*.{js,ts}"]
 }

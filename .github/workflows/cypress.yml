@@ -53,13 +53,13 @@ jobs:
               if: ${{ !cancelled() }}
               with:
                   name: cucumber-report
-                  path: ./
+                  path: ./cucmber-report
                   retention-days: 15
 
     deploy:
         needs: test
         runs-on: ubuntu-latest
-        if: always()
+
         steps:
             - name: Download cucumber report artifact
               if: always()
