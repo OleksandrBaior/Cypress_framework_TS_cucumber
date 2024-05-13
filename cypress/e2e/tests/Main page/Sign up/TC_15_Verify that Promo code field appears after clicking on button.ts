@@ -5,7 +5,7 @@ Given('I visit sign up page', () => {
     createTelnyxAccount.visit();
 });
 When('I click on apply a promo code', () => {
-    createTelnyxAccount.modal.promoCode().click()
+    createTelnyxAccount.modal.promoCodeLink().click()
 });
 Then('Promo code field appears', () => {
     createTelnyxAccount.modal.promoCode().should('be.visible')
