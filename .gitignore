@@ -3,7 +3,7 @@ videos
 screenshots
 --browser
 cucumber-messages.ndjson
-cypress\downloads
+cypress/downloads
 cucumber-report.html
 cucmber-report
-cypress\downloads\downloads.htm
+cypress/downloads/downloads.htm

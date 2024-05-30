@@ -60,7 +60,7 @@ jobs:
         needs: test
         runs-on: ubuntu-latest
         if: always()
-        
+
         steps:
             - name: Download cucumber report artifact
               if: always()

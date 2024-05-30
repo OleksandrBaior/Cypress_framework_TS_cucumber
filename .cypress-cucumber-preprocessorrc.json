@@ -2,7 +2,11 @@
     "html": {
         "enabled": true,
         "output": "./cucmber-report/index.html"
-       
     },
-    "stepDefinitions": ["cypress/e2e/tests/**/[filepath].{js,ts}", "cypress/e2e/[filepath]/**/*.{js,ts}", "cypress/e2e/[filepath].{js,ts}", "cypress/support/step_definitions/**/*.{js,ts}"]
+    "stepDefinitions": [
+        "cypress/e2e/steps/*.{js,ts}",
+        "cypress/e2e/[filepath]/**/*.{js,ts}",
+        "cypress/e2e/[filepath].{js,ts}",
+        "cypress/support/steps/**/*.{js,ts}"
+    ]
 }

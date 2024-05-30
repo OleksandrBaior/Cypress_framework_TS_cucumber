@@ -18,7 +18,7 @@ class CreateTelnyxAccount extends BasePage {
         googleBtn: () => cy.get('[class="nsm7Bb-HzV7m-LgbsSe-bN97Pc-sM5MNb "]'),
         microsoftBtn: () => cy.get('.c-fGHEql > .c-kDQqQr'),
         promoCodeLink: () => cy.get('button.c-ewUecD > .c-khZXrc > .c-PJLV'),
-        promoCode: () => cy.get('#promo_code')
+        promoCode: () => cy.get('#promo_code'),
     };
 
     visit() {

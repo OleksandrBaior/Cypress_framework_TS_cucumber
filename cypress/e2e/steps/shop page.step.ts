@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
-import shopPage from '../../../pages/shop.page';
-import constants from '../../../../resourcers/constants.json';
+import shopPage from '../../pages/shop.page';
+import constants from '../../../resourcers/constants.json';
 import { Given, Then, When } from '@badeball/cypress-cucumber-preprocessor';
 
 Given('I visit shop page', () => {

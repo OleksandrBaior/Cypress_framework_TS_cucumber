@@ -1,8 +1,12 @@
+@Cookie
 Feature: Cookies
-    @Cookie    
-    Scenario: TC_03_Verify cookie pop-up in case allowing all cookies at once
-        Given Cookies is empty
-        Given I visit main page
+
+  Background:
+    Given I visit main page
+    * Cookies is empty
+
+    @TC_03   
+    Scenario: Verify cookie pop-up in case allowing all cookies at once
         When I click on accept all button
         Then Cookie modal is close
-        Then Cookies is not empty
+        * Cookies is not empty

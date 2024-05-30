@@ -1,7 +1,7 @@
 import { faker } from '@faker-js/faker';
 
 class RandomUtils {
-    rundomValue(value = '') {
+    randomValue(value: 'firstName' | 'middleName' | 'email' | 'phoneNumber' | 'text') {
         switch (value) {
             case 'firstName':
                 return faker.person.firstName();
@@ -13,8 +13,6 @@ class RandomUtils {
                 return faker.string.numeric(7);
             case 'text':
                 return faker.lorem.word(5);
-            default:
-                break;
         }
     }
 }

@@ -19,8 +19,8 @@
     },
 
     "styleFiels": {
-        "redBorder": "1px solid rgb(235, 0, 0)",
-        "greenBorder": "1px solid rgb(0, 163, 122)",
+        "redBorder": "0.8px solid rgb(235, 0, 0)",
+        "greenBorder": "0.8px solid rgb(0, 163, 122)",
         "borderColor": "rgb(235, 0, 0)",
         "error": "This field is required."
     }

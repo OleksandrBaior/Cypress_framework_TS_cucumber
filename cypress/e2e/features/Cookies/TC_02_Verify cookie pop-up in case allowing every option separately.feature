@@ -1,12 +1,14 @@
+@Cookie
 Feature: Cookies
-    @Cookie
-    Scenario: TC_02_Verify cookie pop-up in case allowing every option separately
-        Given I visit main page
-        When I click on settings button
 
-        Then I check performance checkbox
-        Then I check functional checkbox
-        Then I check targetting checkbox
-        
-        When I click on confirm my choice
+  Background:
+    Given I visit main page
+
+    @TC_02
+    Scenario: Verify cookie pop-up in case allowing every option separately
+        When I click on settings button
+        And I check performance checkbox
+        * I check functional checkbox
+        * I check targetting checkbox
+        * I click on confirm my choice
         Then Cookie modal is close
